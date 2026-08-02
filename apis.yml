@@ -1,7 +1,25 @@
 aid: turquoise
-name: Turquoise
-description: Turquoise is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/turquoise.png
+name: Turquoise Health
+description: >-
+  Turquoise Health is a healthcare price transparency company (backed by a16z) that runs a
+  platform aggregating and normalizing hospital and payer machine-readable price transparency
+  files, negotiated contract rates, and out-of-network pricing into searchable, benchmarked
+  rate data and analytics. Its products span rate analysis and benchmarking, contract
+  management, clear rates and data assets, healthcare transactions, out-of-network pricing,
+  patient cost estimates / Good Faith Estimates, and price-transparency compliance tooling,
+  serving providers, payers, life sciences, and employers.
 url: https://raw.githubusercontent.com/api-evangelist/turquoise/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +29,48 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
-apis: []
+- Healthcare
+- Price Transparency
+- Health Insurance
+- Rate Data
+- Analytics
+- Compliance
+- Payer
+- Provider
+apis:
+- name: Turquoise Health API
+  description: >-
+    Authenticated API surface behind api.turquoise.health (returns HTTP 401 without
+    credentials; no public OpenAPI or developer documentation is published). Exposes
+    Turquoise Health price transparency and rate data to partners under contract.
+  humanURL: https://turquoise.health/platform
+  baseURL: https://api.turquoise.health
+  properties: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 3
+  pass: local-v1
+common:
+- type: DomainSecurity
+  url: security/turquoise-domain-security.yml
+- type: Website
+  url: https://turquoise.health
+- type: Blog
+  url: https://turquoise.health/resources/blog
+- type: Pricing
+  url: https://turquoise.health/plans/providers
+- type: SignUp
+  url: https://turquoise.health/request-a-demo
+- type: GitHubOrganization
+  url: https://github.com/turquoisehealth
+- type: Packages
+  url: packages/turquoise-packages.yml
